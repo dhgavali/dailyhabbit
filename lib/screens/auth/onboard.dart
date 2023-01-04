@@ -9,7 +9,7 @@ class OnBoarding extends StatelessWidget {
       child: Center(
           child: Column(
         children: [
-          Text(
+          const Text(
             "Welcome to daily habbits",
             style: TextStyle(fontSize: 24),
           ),
