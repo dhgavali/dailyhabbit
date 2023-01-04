@@ -5,6 +5,37 @@ class OnBoarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Center(
+          child: Column(
+        children: [
+          Text(
+            "Welcome to daily habbits",
+            style: TextStyle(fontSize: 24),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20), color: Colors.red),
+              width: 300,
+              child: Text("Login"),
+            ),
+          ),
+          SizedBox(
+            height: 25,
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20), color: Colors.red),
+              width: 300,
+              child: Text("Sign Up"),
+            ),
+          )
+        ],
+      )),
+    );
   }
 }
